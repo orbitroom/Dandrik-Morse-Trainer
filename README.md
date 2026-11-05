@@ -9,7 +9,7 @@ Install it if you want to use the panel. Players without the mod still hear your
 ## Installing
 
 1. Close Wolfpack.
-2. Install a compatible BepInEx 6 IL2CPP for Windows x64 build in the Wolfpack game folder. Builds are available from the [official BepInEx build server](https://builds.bepinex.dev/projects/bepinex_be).
+2. Install a compatible BepInEx 6 IL2CPP for Windows x64 build in the Wolfpack game folder. Builds are available from the [official BepInEx build server](https://builds.bepinex.dev/projects/bepinex_be/697/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.697%2B5362580.zip).
 3. Launch the game once, then close it to create the BepInEx folders.
 4. Copy your chosen mod DLLs into `Wolfpack/BepInEx/plugins/`. The repository's folder names describe who needs the mods; the DLLs all go into this same game folder.
 5. Start the game. Most mods create their settings in `BepInEx/config/` on first launch. Close the game before editing those files.
