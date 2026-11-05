@@ -28,7 +28,7 @@ The panel only works while you are at the radio or the Morse key. Anywhere else 
 | Up and Down arrows | Change the sending speed: 5, 6, 7.5, 10, 12, 15, 20 or 30 words per minute |
 | Esc | Closes the panel |
 
-- **Sending:** your line goes out exactly as you typed it. If you type another line while one is still going out, it waits its turn, up to 10 lines.
+- **Sending:** your line goes out exactly as you typed it, up to 75 characters. If you type another line while one is still going out, it waits its turn, up to 10 lines.
 - **Leaving the radio:** the panel closes, and anything still being sent stops.
 - **Underwater:** the radio has to be above water to send or receive.
 - **Reading:** Morse your radio receives appears as text, one line per sender. The panel works out each sender's speed, so hand-keyed Morse can be read too. Very short messages or very uneven keying can still be misread.
@@ -38,11 +38,12 @@ The panel only works while you are at the radio or the Morse key. Anywhere else 
 
 Settings are in `BepInEx/config/wolfpack.dandriksmorsetrainer.cfg`, created the first time you start the game with the mod.
 
-- `PanelKey`: the key that opens the panel. F7 by default. `None` turns the panel off.
+- `PanelKey`: the key that opens the panel. F7 by default. Pick a key that doesn't type anything, such as `F8`, `Home`, `End`, `PageUp`, `PageDown` or `Pause`, written exactly as in the list of accepted values in the file. A letter or number key would also type into the panel. `None` turns the panel off. Changes are picked up within a few seconds, even with the game running.
 - `WordsPerMinute`: the sending speed. The Up and Down arrows change it too, and it is remembered.
 - `WaitForClearChannel`: waits until nobody else has keyed for a few seconds before sending, so two messages don't get mixed together.
 
 ## Known issues
 
+- Klabautermann also uses F7. If you run both mods, change `PanelKey` to another key.
 - The panel may show Morse from boats on other channels as well as your own.
 - If you decode with fldigi or a similar program, it may garble the first few characters of a line while it locks onto the signal.
