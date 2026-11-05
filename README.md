@@ -44,6 +44,5 @@ Settings are in `BepInEx/config/wolfpack.dandriksmorsetrainer.cfg`, created the 
 
 ## Known issues
 
-- Klabautermann also uses F7. If you run both mods, change `PanelKey` to another key.
 - The panel may show Morse from boats on other channels as well as your own.
 - If you decode with fldigi or a similar program, it may garble the first few characters of a line while it locks onto the signal.
